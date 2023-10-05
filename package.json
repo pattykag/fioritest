@@ -1,0 +1,33 @@
+{
+  "name": "cap-newElement",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4",
+    "@sap/xssec": "^3",
+    "passport": "^0",
+    "@sap/cds-hana": "^2"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.108.15"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-users": "cds watch --open users/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/users"
+  ],
+  "cds": {
+    "requires": {
+      "auth": "xsuaa",
+      "db": "hana"
+    }
+  }
+}

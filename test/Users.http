@@ -1,0 +1,13 @@
+@server=http://localhost:4004
+@service=/odata/v4/api
+
+###
+GET {{server}}{{service}}/Users
+
+###
+POST {{server}}{{service}}/Users
+Content-Type: application/json
+
+{
+    "name": "Felipe"
+}
